@@ -78,3 +78,10 @@ your auction items. All that code—three modules—existed in a single file. On
 start  adding  more  functionality,  that  kind  of  project  structure  will  become  unmaintainable.
 
 ---
+
+### **PART2/chapter-005**
+
+In this chapter we transform you single file auction application in one umbrella application with one app inside.
+Then you use multiple files to organize or modules. And talk about packages and add Ecto and Postgres to handle with real data.
+
+---
