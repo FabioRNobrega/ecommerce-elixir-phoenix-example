@@ -1,6 +1,8 @@
 <section class="row">
   <article class="column">
-    <% for  item <- @items do %>
+
+    <h3> List od Products:  </h3>
+    <%= for  item <- @items do %>
       <li>
         <strong> <%=  item.title %></strong>: <%= item.description %>
       </li>
