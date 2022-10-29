@@ -88,7 +88,11 @@ Then you use multiple files to organize or modules. And talk about packages and 
 
 ### **PART2/chapter-006**
 
-In this chapter we create a Phoenix application inside an existing umbrella app, and we use the old Auction app 
-as data to our template, and now we are able to render the HTML in a local view [localhost:4000](http://localhost:4000)
+In this chapter we create a Phoenix application inside an existing umbrella app, and we use the old Auction app as data to our template, and now we are able to render the HTML in a local view [localhost:4000](http://localhost:4000)
+
+---
+### **PART2/chapter-007**
+
+In this chapter we create a a connection between the application with PostgreSQL using [Ecto](https://hexdocs.pm/ecto/Ecto.html). With that set we create now a real database for the items and and a simple Create, Read and Delete system.
 
 ---
