@@ -79,10 +79,10 @@ That way you can fallow step by step all de development of this application usin
 - Tests: `tests(context): message`
 - Docs: `docs(context): message`
 
-
-## Branches Guide 
+## Branches Guide
 
 ---
+
 ### **PART2/chapter-004**
 
 Your auction application in chapter 4 consisted of a fake repo, a public interface layer
@@ -104,8 +104,15 @@ Then you use multiple files to organize or modules. And talk about packages and 
 In this chapter we create a Phoenix application inside an existing umbrella app, and we use the old Auction app as data to our template, and now we are able to render the HTML in a local view [localhost:4000](http://localhost:4000)
 
 ---
+
 ### **PART2/chapter-007**
 
 In this chapter we create a a connection between the application with PostgreSQL using [Ecto](https://hexdocs.pm/ecto/Ecto.html). With that set we create now a real database for the items and and a simple Create, Read and Delete system.
+
+---
+
+### **PART2/chapter-008**
+
+In this chapter we create a update and learning a little about ecto changeset and validations functions.
 
 ---
