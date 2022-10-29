@@ -1,4 +1,4 @@
-# AuctionUmbrella
+# Auction Umbrella
 
-**TODO: Add description**
+Hi, this is the core umbrella app for the auction application.
 
