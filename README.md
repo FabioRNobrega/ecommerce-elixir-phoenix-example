@@ -9,6 +9,7 @@ I use:
 - Erlang/OTP 24
 - IEx 1.13.4 (compiled with Erlang/OTP 22)
 - Phoenix v1.6
+- Postgres (PostgreSQL) 9.6.21
 
 Table of contents
 =================
@@ -31,7 +32,19 @@ Clone this repo and cd into and install dependencies with
 mix deps.get
 ```
 
-Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+```bash
+mix ecto.migrate
+```
+
+Start this umbrella app going inside the `umbrella_auction/apps/auction` and run:
+
+```bash
+mix -S iex
+```
+
+and to run the Phoenix app go to `umbrella_auction/apps/auction_web` and run:
+
+`mix phx.server` or go inside IEx with `iex -S mix phx.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
