@@ -20,7 +20,11 @@ defmodule AuctionWeb.Router do
     get "/", PageController, :index
     resources "/items", ItemController, only: [
       :index,
-      :show
+      :show,
+      :new,
+      :create,
+      :edit,
+      :update
     ]
   end
 
