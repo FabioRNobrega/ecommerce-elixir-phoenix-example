@@ -117,9 +117,15 @@ In this chapter we create a update and learning a little about ecto changeset an
 
 ---
 
-
 ### **PART2/chapter-009**
 
 In this chapter we create RESTfull resource contains actions for index, show, new, create, edit update. With HTML Templates and Controllers. 
+
+---
+
+### **PART2/chapter-010**
+
+In this chapter, we create a simple session control with [pbkdf2_elixir](https://hex.pm/packages/pbkdf2_elixir). Added the possibility of creating a user and then
+enable the same to log in and log out.
 
 ---

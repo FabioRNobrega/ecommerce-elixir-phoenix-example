@@ -25,6 +25,17 @@
         </a>
       </section>
     </header>
+    <div class="container" style="border-bottom: 1px solid #777; margin-bottom: 2rem; padding-bottom: 1rem;">
+      <%= link "Items", to: Routes.item_path(@conn, :index) %>
+      |
+      <%= if @current_user do %>
+        Logged in as <%= link @current_user.username, to: Routes.user_path(@conn, :show, @current_user) %>
+        |
+        <%= link "Log out", to: Routes.session_path(@conn, :delete), method: :delete %>
+      <% else %>
+        <%= link "login", to: Routes.session_path(@conn, :new) %>
+      <% end %>
+    </div>
     <%= @inner_content %>
   </body>
 </html>
