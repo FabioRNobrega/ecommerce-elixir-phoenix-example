@@ -116,3 +116,10 @@ In this chapter we create a a connection between the application with PostgreSQL
 In this chapter we create a update and learning a little about ecto changeset and validations functions.
 
 ---
+
+
+### **PART2/chapter-009**
+
+In this chapter we create RESTfull resource contains actions for index, show, new, create, edit update. With HTML Templates and Controllers. 
+
+---
