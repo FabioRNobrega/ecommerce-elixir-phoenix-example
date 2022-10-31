@@ -26,6 +26,7 @@ defmodule AuctionWeb.Router do
       :edit,
       :update
     ]
+    resources "/users", UserController, only: [:show, :new, :create]
   end
 
   # Other scopes may use custom stacks.
