@@ -132,6 +132,19 @@ enable the same to log in and log out.
 
 ### **PART2/chapter-011**
 
-In this chapter, we create relations between user, bits and items to be able to handle bids on site per user. 
+In this chapter, we create relations between user, bits and items to be able to handle bids on site per user.
+
 
 ---
+### **PART3/chapter-012**
+
+You probably thinking why this branch doesn't exist, but here is true, this chapter covers phoenix channels but now I day is better you use [Phoenix LiveView](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html) to handle real-time communication to users.
+
+---
+
+### **PART3/chapter-013**
+
+In this chapter, we create a API for external / public usage to list items with bids and all the items on the data base.
+
+---
+
