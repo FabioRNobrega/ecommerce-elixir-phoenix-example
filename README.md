@@ -129,3 +129,9 @@ In this chapter, we create a simple session control with [pbkdf2_elixir](https:/
 enable the same to log in and log out.
 
 ---
+
+### **PART2/chapter-011**
+
+In this chapter, we create relations between user, bits and items to be able to handle bids on site per user. 
+
+---

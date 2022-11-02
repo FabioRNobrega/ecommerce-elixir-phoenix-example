@@ -3,7 +3,8 @@ defmodule AuctionWeb.UserController do
 
   def show(conn, %{"id" => id}) do
     user = Auction.get_user(id)
-    render(conn, "show.html", user: user)
+    bids = Auction.get_bits_for_user(user)
+    render(conn, "show.html", user: user, bids: bids)
   end
 
   def new(conn, _params) do
@@ -30,7 +31,8 @@ defmodule AuctionWeb.UserController do
       conn
       |> put_flash(:error, "Nice try, friend. That's not a page for you")
       |> redirect(to: Routes.item_path(conn, :index))
-      |> halt() # tells the plugs to stop processing the request
+      # tells the plugs to stop processing the request
+      |> halt()
     else
       conn
     end
