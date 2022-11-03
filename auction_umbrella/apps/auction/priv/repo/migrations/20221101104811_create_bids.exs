@@ -3,7 +3,7 @@ defmodule Auction.Repo.Migrations.CreateBids do
 
   def change do
     create table(:bids) do
-      add :amount:, :integer
+      add(:amount, :integer)
       timestamps()
     end
   end

@@ -3,10 +3,21 @@ defmodule AuctionUmbrella.MixProject do
 
   def project do
     [
+      app: :auction,
       apps_path: "apps",
       version: "0.1.0",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      aliases: aliases(),
+      # Docs
+      name: "Auction e-commerce",
+      source_url: "https://github.com/FabioRNobrega/ecommerce-elixir-phoenix-example",
+      homepage_url: "http://fabiornobrega.github.io/",
+      docs: [
+        # The main page in the docs
+        logo: "./apps/auction_web/assets/logos/Auction-logo.png",
+        extras: ["README.md"]
+      ]
     ]
   end
 
@@ -16,6 +27,14 @@ defmodule AuctionUmbrella.MixProject do
   #
   # Run "mix help deps" for examples and options.
   defp deps do
-    []
+    [
+      # dev: true specifies that this dependency isn't
+      # included in your production builds
+      {:ex_doc, "~> 0.29.0", dev: true, runtime: false}
+    ]
+  end
+
+  def aliases do
+    [test: ["ecto.create --quiet", "ecto.migrate", "test"]]
   end
 end

@@ -6,3 +6,13 @@ config :auction_web, AuctionWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
   secret_key_base: "yOzDKdZIrGPPJTCDb059X9D8uzONYE5XsJ3bYLYb82yMZf5WXBn7l7z3S3StKFga",
   server: false
+
+config :auction, Auction.Repo,
+  username: "user",
+  password: "password",
+  database: "auction_test",
+  hostname: "localhost",
+  port: "5432",
+  pool: Ecto.Adapters.SQL.Sandbox
+
+config :logger, level: :info
