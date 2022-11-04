@@ -11,8 +11,9 @@ defmodule AuctionUmbrella.MixProject do
       aliases: aliases(),
       # Docs
       name: "Auction e-commerce",
-      source_url: "https://github.com/FabioRNobrega/ecommerce-elixir-phoenix-example",
-      homepage_url: "http://fabiornobrega.github.io/",
+      source_url:
+        "https://github.com/FabioRNobrega/ecommerce-elixir-phoenix-example/tree/main/auction_umbrella",
+      homepage_url: "https://github.com/FabioRNobrega/ecommerce-elixir-phoenix-example",
       docs: [
         # The main page in the docs
         logo: "./apps/auction_web/assets/logos/Auction-logo.png",

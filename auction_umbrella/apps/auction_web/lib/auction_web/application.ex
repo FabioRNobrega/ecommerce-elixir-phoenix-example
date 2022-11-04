@@ -10,6 +10,8 @@ defmodule AuctionWeb.Application do
     children = [
       # Start the Telemetry supervisor
       AuctionWeb.Telemetry,
+      # Start the PubSub system
+      {Phoenix.PubSub, name: AuctionWeb.PubSub},
       # Start the Endpoint (http/https)
       AuctionWeb.Endpoint
       # Start a worker by calling: AuctionWeb.Worker.start_link(arg)
