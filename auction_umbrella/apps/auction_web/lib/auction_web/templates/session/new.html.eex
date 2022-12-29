@@ -11,3 +11,5 @@
         <%= submit "Submit" %>
     </div>
 <% end %>
+
+<%= link "Create account", to: Routes.user_path(@conn, :new) %> 

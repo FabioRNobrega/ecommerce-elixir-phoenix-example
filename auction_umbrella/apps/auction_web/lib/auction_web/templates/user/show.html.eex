@@ -9,6 +9,8 @@
 </dl>
 
 <h2> Recent bids </h2>
+
+<%= link "Create new item", to: Routes.item_path(@conn, :new) %> 
 <%= for bid <- @bids do %>
     <p>
         <strong> <%= formatted_datetime(bid.inserted_at) %> </strong>
