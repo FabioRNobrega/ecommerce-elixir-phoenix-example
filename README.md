@@ -48,6 +48,26 @@ and to run the Phoenix app go to `umbrella_auction/apps/auction_web` and run:
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
+
+Or you can use a docker to run local without install elixir, erlang and postgres. On Bash run: 
+
+```bash 
+docker-compose build
+```
+
+```bash 
+docker-compose run web mix ecto.create
+```
+
+```bash
+docker-compose run web mix ecto.migrate
+```
+
+```bash
+docker-compose up
+```
+Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+
 ## Tests
 
 The tests are made using [ExUnit](https://hexdocs.pm/ex_unit/main/ExUnit.html) and can be found on the test folder. To run use
