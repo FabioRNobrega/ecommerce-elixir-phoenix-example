@@ -1,0 +1,43 @@
+
+.header {
+    background: linear-gradient(180deg, #393F60 0%, #575E8B 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Zilla Slab', serif;
+    color: #FFF;
+    display: flex;
+    padding: 20px 0;
+}
+
+.menu {
+    background: #95B2D0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px 0;;
+}
+
+.menu-items {
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+.menu-items a {
+    color: #393F60;
+    font-weight: bold;
+}
+
+
+/* tablets-and-down */ 
+  @media  screen and ( max-width: 991.98px ) {
+    .menu {
+        padding: auto;
+    }
+
+    .menu-items {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+  }

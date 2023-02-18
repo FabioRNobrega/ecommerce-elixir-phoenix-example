@@ -7,25 +7,35 @@
     <%= csrf_meta_tag() %>
     <%= live_title_tag assigns[:page_title] || "Messenger", suffix: " · Phoenix Framework" %>
     <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/assets/app.css")}/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&display=swap" rel="stylesheet">
     <script defer phx-track-static type="text/javascript" src={Routes.static_path(@conn, "/assets/app.js")}></script>
   </head>
   <body>
-    <header>
+    <header class="header">
       <section class="container">
         <h1> E-commerce Phoenix LiveView Example</h1>
       </section>
     </header>
-    <div class="container" style="border-bottom: 1px solid #777; margin-bottom: 2rem; padding-bottom: 1rem;">
-      <%= link "Items", to: Routes.item_path(@conn, :index) %>
+    <nav class="menu">
+      <div class="container menu-items">
+        <div>
+          <%= link "Products", to: Routes.item_path(@conn, :index) %>
+        </div>
 
-      <%= if @current_user do %>
-        Logged in as <%= link @current_user.username, to: Routes.user_path(@conn, :show, @current_user) %>
-        |
-        <%= link "Log out", to: Routes.session_path(@conn, :delete), method: :delete %>
-      <% else %>
-        <%= link "login", to: Routes.session_path(@conn, :new) %>
-      <% end %>
-    </div>
+        <div>
+          <%= if @current_user do %>
+            Logged in as   <%= link @current_user.username, to: Routes.user_path(@conn, :show, @current_user) %>
+            |
+            <%= link "Log out", to: Routes.session_path(@conn, :delete), method: :delete %>
+          <% else %>
+            <%= link "login", to: Routes.session_path(@conn, :new) %>
+          <% end %>
+        </div>
+  
+      </div>
+    </nav>
     <%= @inner_content %>
   </body>
 </html>
